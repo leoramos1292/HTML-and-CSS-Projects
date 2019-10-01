@@ -94,6 +94,7 @@ body {
 .row:after {
     content: "";
     display: table;
+    clear: both;
 }
 
 /*---------------------------
@@ -109,7 +110,7 @@ h1 {
 }
 
 p {
-    font-family: Perpetua, Rockwell-Extra, bold;
+    font-family: Perpetua, Rockwell Extra bold;
     text-align: justify;
     letter-spacing: 1px;
     font-size: 20px;
@@ -158,7 +159,7 @@ input[type=text] {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    font-family: Perpetua, Rockweel Extra Bold;
+    font-family: Perpetua, Rockwell Extra Bold;
 }
 
 input[type=submit] {
@@ -172,7 +173,7 @@ input[type=submit] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-family: Perpetua, Rockweel Extra Bold;
+    font-family: Perpetua, Rockwell Extra Bold;
 }
 
 input[type=submit]:hover {
