@@ -53,6 +53,70 @@
 		<!-- END OF GAME SECTION -->
 		<br>
 		<br>
+
+		<!-- Lightbox section -->
+
+		<div class="row">
+			<div class="column">
+				<img src="images/kawhi.jpg" onclick="openModal();currentslide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/slamdunk.jpg" onclick="openModal();currentslide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/stuffed.jpg" onclick="openModal();currentslide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/face_paint.jpg" onclick="openModal();currentslide(4)" class="hover-shadow">
+			</div>
+		</div>
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="images/kawhi-wide.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="images/slamdunk-wide.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="images/stuffed-wide.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="images/face_paint-wide.jpg" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<div class="column">
+					<img class="bBall" src="images/kawhi.jpg" onclick="currentslide(1)" alt="Kawhi probably losing the ball">
+				</div>
+				<div class="column">
+					<img class="bBall" src="images/slamdunk.jpg" onclick="currentslide(2)" alt="Slamin that ball into the basket">
+				</div>
+				<div class="column">
+					<img class="bBall" src="images/stuffed.jpg" onclick="currentslide(3)" alt="Some guy gettin stuffed">
+				</div>
+				<div class="column">
+					<img class="bBall" src="images/face_paint.jpg" onclick="currentslide(4)" alt="Fan appreciation">
+				</div>
+			</div>
+		</div>
+		<!-- End of Lightbox section -->
+
 		<footer>This is the only place that Basketball &reg; is allowed to be talked about in the world.<br>
 				Any other use of the the word Basketball &reg; will result in immediate seizure<br>
 				of all owned property and instant death penalty.<br>
@@ -60,6 +124,7 @@
 			</footer>
 		<br>	
 		<a href="#home">BACK TO TOP</a>
-		
+	
+		<script src="JS/one_page_website.js"></script>
 	</body>
 </html>
