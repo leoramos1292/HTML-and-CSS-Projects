@@ -137,7 +137,7 @@ img.hover-shadow {
     transition: 0.3s;
     height: 250px;
     width: 250px;
-    
+    cursor: pointer;
 }
 
 .hover-shadow:hover {
