@@ -46,6 +46,10 @@
             </div>
             <!--END JUMBO TEXT -->
 
+            <div class="alert alert-primary" role="alert">
+                    Sign up for deals below! <a href="#deals" class="alert-link">Click here to get to our sign up form</a>.
+                  </div>
+
            <!-- COLUMNS -->
            <div id="about">
            <div class="container">
@@ -65,11 +69,11 @@
                     <div class="col-sm">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <a class="nav-link" href="#">Kong: Skull Island</a></li>
+                                <a class="nav-link" href="#KsI">Kong: Skull Island</a></li>
                             <li class="list-group-item">
-                                <a class="nav-link" href="#">Ghost in the Shell</a></li>
+                                <a class="nav-link" href="#GiS">Ghost in the Shell</a></li>
                             <li class="list-group-item">
-                                <a class="nav-link" href="#">Beauty and the Beast</a></li>
+                                <a class="nav-link" href="#BnB">Beauty and the Beast</a></li>
                         </ul>
                     </div>
                 </div>
@@ -82,7 +86,7 @@
             <h1>Showtimes:</h1>
             <div class="card-deck">
 
-                    <div class="card">
+                    <div class="card" id="BnB">
                         <img src="img/beautyandthebeast.jpg" class="card-img-top" alt="Beauty and the Beast pic">
                         <div class="card-body">
                         <h5 class="card-title">Beauty and the Beast</h5>
@@ -100,7 +104,7 @@
                         </div>
                 </div>
                 
-                <div class="card" style="width: 21rem;">
+                <div class="card" style="width: 21rem;" id="GiS">
                     <img src="img/ghostintheshell.jpg" class="card-img-top" alt="Ghost in the Shell pic">
                         <div class="card-body">
                             <h5 class="card-title">Ghost in the Shell</h5>
@@ -119,7 +123,7 @@
                         </div>
                 </div>        
             
-                <div class="card" style="width: 21rem;">
+                <div class="card" style="width: 21rem;" id="KsI">
                     <img src="img/kongskullisland.jpg" class="card-img-top" alt="Kong: Skull Island pic">
                         <div class="card-body">
                             <h5 class="card-title">Kong: Skull Island</h5>
@@ -142,6 +146,13 @@
             </div>
             <!-- END SHOWTIMES -->
 
+            <!-- DEALS JUMBOTRON-->
+            <br>
+            <div class="jumbotron jumbotron-fluid bg-info text-center">
+                <h1 class="display-4 text-light">MOVIE DEALS</h1><br>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>              </div>
+            <!-- END DEALS JUMBOTRON -->
+
             <!-- BUTTON SECTION -->
             <div id="deals">
             <div class="text-center">
@@ -150,11 +161,53 @@
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie reward deals!">Submit</button>
                 </form>
             </div>
             </div>
             <!-- END BUTTON SECTION-->
+
+            <!-- FORM MODAL-->
+            <div class="modal" id="register" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Register to Receive Movie Deals</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        
+                        <div class="modal-body">
+                        
+                        <form>
+                            <fieldset class="form-group">
+                                <label for="firstname">First Name:</label>
+                                <input type="text" class="form-control" id="firstname" placeholdr="First Name...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="lastname">Last Name:</label>
+                                <input type="text" class="form-control" id="lastname" placeholdr="Last Name...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholdr="Email...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="paswword" class="form-control" id="password" placeholdr="Password...">
+                            </fieldset>
+                        </form>
+                            
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <!-- END FORM MODAL-->
 
             <!-- FOOTER -->
             <div class="container my-5">
@@ -169,24 +222,19 @@
                         <small class="nav-link">&copy;2019 Academy Cinemas&reg;</li></small>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ 
+    <script>
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+    </script>
+
+
+</body>
 </html>
